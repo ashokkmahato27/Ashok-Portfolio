@@ -57,10 +57,10 @@ nav ul li a:hover{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-    width: 60%;
+    width: 100%;
 }
 
-.rightsection{
+/*.rightsection{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,12 +68,12 @@ nav ul li a:hover{
     height: 70vh;
     width: 40%;
     margin: 30px 5px;
-}
+}*/
 
-.rightsection img{
+/*.rightsection img{
     height: 90vh;
     width: 90vh;
-}
+}*/
 
 .highlight{
     color: #544bfc;
@@ -279,3 +279,161 @@ main hr{
 .footer-section ul :hover{
     transform: scale(1.1);
 }
+
+/* ------------------------------------------
+    RESPONSIVE DESIGN (ADD AFTER YOUR CSS)
+-------------------------------------------*/
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .leftsection,
+    .rightsection {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightsection img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .about-section,
+    .skills-section,
+    .projects-section,
+    .achievements-section {
+        height: auto;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .project {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* ------------------------------
+   MOBILE PHONE RESPONSIVE
+-------------------------------*/
+@media (max-width: 768px) {
+
+    /* NAVIGATION */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* HOME SECTION */
+    .home {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .leftsection {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightsection {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .rightsection img {
+        height: 250px;
+        width: 250px;
+    }
+
+    /* ABOUT */
+    .about-section {
+        margin: 20px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* SKILLS GRID */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .skill ul {
+        padding-left: 0;
+    }
+
+    .skill li {
+        border-left: none;
+        border-bottom: 2px solid #00ffcc;
+        padding: 5px 0;
+    }
+
+    /* PROJECTS SECTION */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    /* ACHIEVEMENTS */
+    .achievements-section h3 {
+        margin-left: 10px;
+        font-size: 1.1rem;
+    }
+
+    .achievements-section p {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+
+    /* SOCIAL ICONS */
+    .social-section ul {
+        gap: 15px;
+    }
+
+    .social-section img {
+        width: 40px;
+    }
+
+    /* FOOTER */
+    .footer-section ul {
+        gap: 15px;
+    }
+
+    .footer-section img {
+        width: 25px;
+    }
+}
+
+/* ---------------------------------------
+  VERY SMA
