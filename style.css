@@ -280,52 +280,6 @@ main hr{
     transform: scale(1.1);
 }
 
-/* ------------------------------------------
-    RESPONSIVE DESIGN (ADD AFTER YOUR CSS)
--------------------------------------------*/
-
-/* For tablets and medium screens */
-@media (max-width: 1024px) {
-
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    .home {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .leftsection,
-    .rightsection {
-        width: 100%;
-        height: auto;
-    }
-
-    .rightsection img {
-        height: 300px;
-        width: 300px;
-    }
-
-    .about-section,
-    .skills-section,
-    .projects-section,
-    .achievements-section {
-        height: auto;
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .project {
-        width: 80%;
-        margin: auto;
-    }
-}
-
-/* ------------------------------
-   MOBILE PHONE RESPONSIVE
--------------------------------*/
 @media (max-width: 768px) {
 
     /* NAVIGATION */
@@ -349,22 +303,12 @@ main hr{
         flex-direction: column;
         padding: 20px;
         text-align: center;
+        width: 100%;
     }
 
     .leftsection {
         width: 100%;
         height: auto;
-    }
-
-    .rightsection {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-    }
-
-    .rightsection img {
-        height: 250px;
-        width: 250px;
     }
 
     /* ABOUT */
@@ -434,6 +378,3 @@ main hr{
         width: 25px;
     }
 }
-
-/* ---------------------------------------
-  VERY SMA
